@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open app in browser (XAMPP Apache)",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "start",
+                "",
+                "http://localhost/employee-management-app-main/"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Open app in browser (XAMPP Apache port 8080)",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "start",
+                "",
+                "http://localhost:8080/employee-management-app-main/"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            }
+        }
+    ]
+}

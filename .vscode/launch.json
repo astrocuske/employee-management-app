@@ -1,14 +1,29 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // XAMPP uses Apache (not the VS Code "Live Server" extension).
+    // 1. Open XAMPP Control Panel and click Start next to Apache.
+    // 2. This project must live under C:\xampp\htdocs\employee-management-app-main\
+    // 3. Then F5 here, or run task: "Open app in browser (XAMPP Apache)".
     "version": "0.2.0",
     "configurations": [
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "name": "Chrome — XAMPP Apache (port 80)",
+            "url": "http://localhost/employee-management-app-main/",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Edge — XAMPP Apache (port 80)",
+            "url": "http://localhost/employee-management-app-main/",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Chrome — XAMPP Apache (port 8080)",
+            "url": "http://localhost:8080/employee-management-app-main/",
             "webRoot": "${workspaceFolder}"
         }
     ]
