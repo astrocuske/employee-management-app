@@ -1,0 +1,91 @@
+body {
+    font-family: arial,sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #f4f4f4;
+}
+.sidebar {
+    width: 250px;
+    background: #222d32;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.sidebar h2 {
+    font-size: 1.2rem;
+    border-bottom: 1pxsolid #444;
+    padding-bottom: 10px;
+}
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+.nav-links li {
+    margin: 20px 0;
+}
+.nav-links a {
+    color: #b8c7ce;
+    text-decoration: none;
+    display: block;
+}
+.nav-links a :hover {
+    color: white;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+}
+.card {
+    padding: 20px;
+    border-radius: 4px;
+    color: white;
+    flex: 1;
+    position: relative;
+}
+.blue {
+    background: #00c0ef;
+}
+.green {
+    background: #00a65a;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+th,td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-top: 3px solid #d2d6de;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+btn {
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+btn-details {
+    background: #00c0ef;
+}
+btn-edit {
+    background: #f39c12;
+}
+btn-delete {
+    background: #dd4b39;
+}
