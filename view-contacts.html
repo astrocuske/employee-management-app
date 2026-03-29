@@ -7,54 +7,68 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <th>No.</th>
-            <th>Name</th>
-            <th>Phone</th>
-            <th>Actions</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Jeremy Owiti</td>
-            <td>+2547...</td>
-            <td>
-                <button class="btn btn-details">Details</button>
-                <button class="btn btn-edit" onclick="editAlert()">Edit</button>
-                <button class="btn btn-delete" onclick="deleteConfirm()">Delete</button>
-            </td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Allan Tom</td>
-            <td>+2547...</td>
-            <td>
-                <button class="btn btn-details">Details</button>
-                <button class="btn btn-edit" onclick="editAlert()">Edit</button>
-                <button class="btn btn-delete" onclick="deleteConfirm()">Delete</button>
-            </td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>John Thuo</td>
-            <td>+2547...</td>
-            <td>
-                <button class="btn btn-details">Details</button>
-                <button class="btn btn-edit" onclick="editAlert()">Edit</button>
-                <button class="btn btn-delete" onclick="deleteConfirm()">Delete</button>
-            </td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Paul Michael</td>
-            <td>+2547...</td>
-            <td>
-                <button class="btn btn-details">Details</button>
-                <button class="btn btn-edit" onclick="editAlert()">Edit</button>
-                <button class="btn btn-delete" onclick="deleteConfirm()">Delete</button>
-            </td>
-        </tr>
-    </table>
+    <nav class="sidebar">
+        <div class="profile-section">
+            <img src="./index.html" alt="Profile Photo" class="profile-photo">
+            <h2>Astrocus Mumia <img src="images/online.jpg" alt="Online" class="online-icon"><br><small style="color: #00ff00;">.Online</small></h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><img src="images/home.jpg" alt="Home" class="nav-icon"> Home</a></li>
+            <li><a href="new-contact.html"><img src="images/add-contact.jpg" alt="Add Contact" class="nav-icon"> Add New Contact</a></li>
+            <li><a href="view-contacts.html"><img src="images/contact-list.jpg" alt="View Contacts" class="nav-icon"> View All Contacts</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <h1>View All Contacts</h1>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Jeremy Owiti</td>
+                <td>+2547...</td>
+                <td>
+                    <button class="btn btn-details"><img src="images/contact-list.jpg" alt="Details" class="btn-icon"></button>
+                    <button class="btn btn-edit" onclick="editAlert()"><img src="images/edit.jpg" alt="Edit" class="btn-icon"></button>
+                    <button class="btn btn-delete" onclick="deleteConfirm()"><img src="images/delete-icon.jpg" alt="Delete" class="btn-icon"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Allan Tom</td>
+                <td>+2547...</td>
+                <td>
+                    <button class="btn btn-details"><img src="images/contact-list.jpg" alt="Details" class="btn-icon"></button>
+                    <button class="btn btn-edit" onclick="editAlert()"><img src="images/edit.jpg" alt="Edit" class="btn-icon"></button>
+                    <button class="btn btn-delete" onclick="deleteConfirm()"><img src="images/delete-icon.jpg" alt="Delete" class="btn-icon"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>John Thuo</td>
+                <td>+2547...</td>
+                <td>
+                    <button class="btn btn-details"><img src="images/contact-list.jpg" alt="Details" class="btn-icon"></button>
+                    <button class="btn btn-edit" onclick="editAlert()"><img src="images/edit.jpg" alt="Edit" class="btn-icon"></button>
+                    <button class="btn btn-delete" onclick="deleteConfirm()"><img src="images/delete-icon.jpg" alt="Delete" class="btn-icon"></button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Paul Michael</td>
+                <td>+2547...</td>
+                <td>
+                    <button class="btn btn-details"><img src="images/contact-list.jpg" alt="Details" class="btn-icon"></button>
+                    <button class="btn btn-edit" onclick="editAlert()"><img src="images/edit.jpg" alt="Edit" class="btn-icon"></button>
+                    <button class="btn btn-delete" onclick="deleteConfirm()"><img src="images/delete-icon.jpg" alt="Delete" class="btn-icon"></button>
+                </td>
+            </tr>
+        </table>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
